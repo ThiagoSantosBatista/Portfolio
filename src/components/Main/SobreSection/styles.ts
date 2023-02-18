@@ -5,7 +5,7 @@ export const Section = styled.section`
   grid-template-columns: auto 1fr;
   align-items: center;
   gap: 12rem;
-  margin: 14rem 0 16rem;
+  margin: 14rem 0 11.6rem;
 `;
 
 export const Picture = styled.picture`
