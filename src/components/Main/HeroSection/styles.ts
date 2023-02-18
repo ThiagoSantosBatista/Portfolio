@@ -11,7 +11,7 @@ export const Section = styled.section`
     font-size: 4.8rem;
     font-weight: 300;
     font-family: "Work Sans", sans-serif;
-    line-height: 1.2;
+    line-height: 1.3;
     text-align: center;
     transform: translateY(-4rem);
   }

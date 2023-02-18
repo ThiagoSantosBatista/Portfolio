@@ -31,7 +31,7 @@ export const ContentDiv = styled.div`
     font-size: 3.6rem;
     font-weight: 300;
     font-family: "Work Sans", sans-serif;
-    line-height: 1.2;
+    line-height: 1.3;
   }
   p {
     margin-bottom: 1.6rem;

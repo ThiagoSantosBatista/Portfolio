@@ -16,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
   body{
     min-height: 100vh;
     font-size: 1.6rem;
+    color: #eaeaea;
     background: #040404;
   }
   img{

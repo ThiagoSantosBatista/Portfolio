@@ -3,6 +3,7 @@ import HeroSection from "./HeroSection";
 import SkillsSection from "./SkillsSection";
 import SobreSection from "./SobreSection";
 import * as S from "./styles";
+import TecnologiasSection from "./TecnologiasSection";
 
 const Main = () => {
   return (
@@ -11,6 +12,8 @@ const Main = () => {
       <SobreSection />
       <S.Linha></S.Linha>
       <SkillsSection />
+      <S.Linha></S.Linha>
+      <TecnologiasSection />
       <S.Linha></S.Linha>
     </S.Main>
   );
