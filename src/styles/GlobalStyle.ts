@@ -31,6 +31,11 @@ const GlobalStyle = createGlobalStyle`
   li{
     list-style: none;
   }
+  .textoDestaque{
+    color: #ffffff;
+    font-weight: 500;
+    font-family: 'Work Sans', sans-serif;
+  }
 `;
 
 export default GlobalStyle;
