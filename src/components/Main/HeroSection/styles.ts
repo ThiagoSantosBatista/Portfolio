@@ -7,7 +7,7 @@ export const Section = styled.section`
   height: 63rem;
 
   h1 {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(234, 234, 234, 0.8);
     font-size: 4.8rem;
     font-weight: 300;
     font-family: "Work Sans", sans-serif;

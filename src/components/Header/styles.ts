@@ -7,6 +7,7 @@ export const Header = styled.header`
   width: 100%;
   height: 7rem;
   border-bottom: 0.2rem solid #111111;
+  background: #040404;
   z-index: 10;
 `;
 
@@ -27,7 +28,7 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
   a {
-    color: #ffffff;
+    color: #EAEAEA;
     text-transform: uppercase;
     font-family: "Work Sans", sans-serif;
     transition: all 0.3s;

@@ -26,14 +26,15 @@ const GlobalStyle = createGlobalStyle`
     display: block;
   }
   a{
+    display: inline-block;
     text-decoration: none;
   }
   li{
     list-style: none;
   }
   .textoDestaque{
-    color: #ffffff;
-    font-weight: 500;
+    color: #EAEAEA;
+    font-weight: 700;
     font-family: 'Work Sans', sans-serif;
   }
 `;
