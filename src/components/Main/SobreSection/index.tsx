@@ -5,7 +5,7 @@ import * as S from "./styles";
 
 const SobreSection = () => {
   return (
-    <S.Section>
+    <S.Section id="sobre">
       <S.Picture>
         <div></div>
         <img src={Foto} alt="Minha Foto" />

@@ -4,7 +4,7 @@ import * as S from "./styles";
 
 const HeroSection = () => {
   return (
-    <S.Section>
+    <S.Section id="home">
       <h1>
         Meu nome é <span className="textoDestaque">Thiago</span> e eu <br /> sou
         <span className="textoDestaque"> desenvolvedor Front-End</span>

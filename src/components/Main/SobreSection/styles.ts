@@ -5,7 +5,7 @@ export const Section = styled.section`
   grid-template-columns: auto 1fr;
   align-items: center;
   gap: 12rem;
-  margin: 14rem 0 11.6rem;
+  padding: 14rem 0 11.6rem;
 `;
 
 export const Picture = styled.picture`
@@ -47,9 +47,9 @@ export const ContentDiv = styled.div`
   &::before {
     content: "";
     position: absolute;
-    left: -4rem;
+    left: -3.6rem;
     top: -5%;
-    width: 0.4rem;
+    width: 0.2rem;
     height: 110%;
     border-radius: 0.4rem;
     background-color: #111111;

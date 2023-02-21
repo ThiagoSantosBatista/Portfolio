@@ -8,7 +8,7 @@ export const Main = styled.main`
 
 export const Linha = styled.div`
   width: 100%;
-  height: 0.4rem;
+  height: 0.2rem;
   border-radius: 0.4rem;
   background: #111111;
 `;
