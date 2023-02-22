@@ -964,6 +964,11 @@ source-map-js@^1.0.2:
   resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.0.2.tgz#adbc361d9c62df380125e7f161f71c826f1e490c"
   integrity sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==
 
+ssr-window@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/ssr-window/-/ssr-window-4.0.2.tgz#dc6b3ee37be86ac0e3ddc60030f7b3bc9b8553be"
+  integrity sha512-ISv/Ch+ig7SOtw7G2+qkwfVASzazUnvlDTwypdLoPoySv+6MqlOV10VwPSE6EWkGjhW50lUmghPmpYZXMu/+AQ==
+
 styled-components@^5.3.6:
   version "5.3.6"
   resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-5.3.6.tgz#27753c8c27c650bee9358e343fc927966bfd00d1"
@@ -996,6 +1001,13 @@ svg-parser@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/svg-parser/-/svg-parser-2.0.4.tgz#fdc2e29e13951736140b76cb122c8ee6630eb6b5"
   integrity sha512-e4hG1hRwoOdRb37cIMSgzNsxyzKfayW6VOflrwvR+/bzrkyxY/31WkbgnQpgtrNp1SdpJvpUAGTa/ZoiPNDuRQ==
+
+swiper@^9.0.5:
+  version "9.0.5"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-9.0.5.tgz#cd6b6520d2431e3809f51fb8682f5a37e8295e4a"
+  integrity sha512-UiLQ5fvn8L3ZZpaPa+9oiwKwhVGQt5TVc0UuXxFKHyTQe8g2E3vbPMiMfIGb6NhNGj5ntsSDyyNgg4qVmWlJkQ==
+  dependencies:
+    ssr-window "^4.0.2"
 
 to-fast-properties@^2.0.0:
   version "2.0.0"

@@ -13,8 +13,8 @@ const TecnologiasSection = () => {
   return (
     <S.Section>
       <h2>
-        Essas são as <span className="textoDestaque">tecnologias</span> que eu{" "}
-        <span className="textoDestaque">possuo conhecimento</span>
+        Essas são as <span className="textoDestaque">tecnologias</span> que eu
+        <span className="textoDestaque"> possuo conhecimento</span>
       </h2>
       <S.List>
         <S.ListItem>

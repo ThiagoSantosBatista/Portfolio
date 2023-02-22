@@ -12,6 +12,7 @@ export const Section = styled.section`
     color: rgba(234, 234, 234, 0.8);
     font-size: 3.6rem;
     font-weight: 300;
+    font-family: "Work Sans", sans-serif;
     line-height: 1.3;
     text-align: center;
   }

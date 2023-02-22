@@ -10,6 +10,7 @@ export const Section = styled.section`
 
 export const Picture = styled.picture`
   position: relative;
+  max-width: 32rem;
   margin: 0 0 2.8rem 2.8rem;
 
   div {

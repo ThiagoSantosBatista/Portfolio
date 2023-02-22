@@ -1,0 +1,32 @@
+.swiper {
+  width: 100%;
+  padding: 0 6rem;
+  max-width: 112.8rem;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+.swiper-button-prev {
+  background-image: url(../../assets/svgs/arrowLeft.svg);
+}
+
+.swiper-button-next {
+  background-image: url(../../assets/svgs/arrowRight.svg);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-slide-next {
+  margin-right: 6.1rem !important;
+  border-radius: 1rem;
+}
+.swiper-slide-prev {
+  transform: translateX(-6rem);
+}

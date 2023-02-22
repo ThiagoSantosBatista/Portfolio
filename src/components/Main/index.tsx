@@ -1,5 +1,6 @@
 import React from "react";
 import HeroSection from "./HeroSection";
+import ProjetosSection from "./ProjetosSection";
 import SkillsSection from "./SkillsSection";
 import SobreSection from "./SobreSection";
 import * as S from "./styles";
@@ -14,6 +15,8 @@ const Main = () => {
       <SkillsSection />
       <S.Linha></S.Linha>
       <TecnologiasSection />
+      <S.Linha></S.Linha>
+      <ProjetosSection />
       <S.Linha></S.Linha>
     </S.Main>
   );
