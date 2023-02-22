@@ -1,22 +1,40 @@
-import React from 'react'
-import * as S from './styles'
+import React from "react";
+import { ModalProps } from "../../../../types/ModalType";
+import * as S from "./styles";
 
 interface CardProps {
-    name: string;
-    url: string;
+  modal: (modalData: ModalProps) => void;
+  name: string;
+  img: string;
+  link: string;
+  desc: string;
+  repo: string;
+  techs: string[];
 }
 
-const Card = ({name, url}:CardProps) => {
+const Card = ({ modal, name, img, link, desc, repo, techs }: CardProps) => {
+
+  const ModalData = {
+    name: `${name}`,
+    desc: `${desc}`,
+    repo: `${repo}`,
+    techs: [...techs],
+  };
+
   return (
     <S.Card>
-        <img src={url} alt="" />
-        <S.CardContent>
-            <h3>{name}</h3>
-            <button className='demoBtn'>Visualizar</button>
-            <button className='sobreBtn'>Sobre</button>
-        </S.CardContent>
+      <img src={img} alt="" />
+      <S.CardContent>
+        <h3>{name}</h3>
+        <a href={link} target="_blank" className="demoBtn">
+          Visualizar
+        </a>
+        <button className="sobreBtn" onClick={() => modal(ModalData)}>
+          Sobre
+        </button>
+      </S.CardContent>
     </S.Card>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;

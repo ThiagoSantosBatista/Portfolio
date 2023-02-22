@@ -30,6 +30,7 @@ export const CardContent = styled.div`
     padding: 1rem 0;
     border-radius: 0.4rem;
     border: 0.1rem solid #9bf00b;
+    font-size: 1.4rem;
     font-weight: 700;
     font-family: "Work Sans", sans-serif;
     text-transform: uppercase;
@@ -40,7 +41,6 @@ export const CardContent = styled.div`
     margin-right: 1.2rem;
     color: #040404;
     background: #9bf00b;
-
   }
   .sobreBtn {
     color: #9bf00b;

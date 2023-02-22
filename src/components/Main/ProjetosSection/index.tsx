@@ -2,8 +2,9 @@ import React from "react";
 import { SwiperSlide, SwiperProps } from "swiper/react";
 import Card from "./Card";
 import { projects } from "./projetos";
-import * as S from "./styles";
 import Slider from "../../Slider/Slider";
+import { ModalProps } from "../../../types/ModalType";
+import * as S from "./styles";
 
 const setting: SwiperProps = {
   spaceBetween: 24,
@@ -19,7 +20,11 @@ const setting: SwiperProps = {
   },
 };
 
-const ProjetosSection = () => {
+interface ProjetosSectionProps {
+  modal: (modalData: ModalProps) => void;
+}
+
+const ProjetosSection = ({modal}: ProjetosSectionProps) => {
   return (
     <S.Section id="projetos">
       <header>
@@ -31,9 +36,9 @@ const ProjetosSection = () => {
         </p>
       </header>
       <Slider settings={setting}>
-        {projects.map(({ name, url }) => (
-          <SwiperSlide>
-            <Card name={name} url={url} />
+        {projects.map(({ key, name, img, link, desc, repo, techs }) => (
+          <SwiperSlide key={key}>
+            <Card modal={modal} name={name} img={img} link={link} desc={desc} repo={repo} techs={techs}/>
           </SwiperSlide>
         ))}
       </Slider>

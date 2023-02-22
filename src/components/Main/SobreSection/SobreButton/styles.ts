@@ -13,5 +13,4 @@ export const Button = styled.button<ButtonProps>`
   font-size: 1.8rem;
   font-family: "Work Sans", sans-serif;
   text-transform: uppercase;
-  cursor: pointer;
 `;
