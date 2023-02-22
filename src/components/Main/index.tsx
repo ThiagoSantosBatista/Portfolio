@@ -7,6 +7,7 @@ import SobreSection from "./SobreSection";
 import TecnologiasSection from "./TecnologiasSection";
 import { ModalProps } from "../../types/ModalType";
 import * as S from "./styles";
+import ContatoSection from "./ContatoSection";
 
 const Main = () => {
   const [modal, setModal] = useState<ModalProps | null>(null);
@@ -31,6 +32,8 @@ const Main = () => {
         <TecnologiasSection />
         <S.Linha></S.Linha>
         <ProjetosSection modal={changeModal} />
+        <S.Linha></S.Linha>
+        <ContatoSection />
         <S.Linha></S.Linha>
       </S.Main>
       {modal && <Modal modal={changeModal} {...modal} />}
