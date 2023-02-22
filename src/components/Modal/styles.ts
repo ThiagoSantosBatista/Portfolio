@@ -22,6 +22,7 @@ export const ModalDiv = styled.div`
   h2 {
     margin: 0 5rem 1.6rem 0;
     font-size: 2.4rem;
+    font-weight: 600;
     font-family: "Work Sans", sans-serif;
   }
   p {
@@ -52,7 +53,8 @@ export const ModalDiv = styled.div`
     color: #040404;
     background: #9bf00b;
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 600;
+    font-family: "Work Sans", sans-serif;
     text-transform: uppercase;
   }
 

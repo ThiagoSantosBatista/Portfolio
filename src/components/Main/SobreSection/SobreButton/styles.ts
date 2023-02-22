@@ -11,6 +11,7 @@ export const Button = styled.button<ButtonProps>`
   border-radius: 0.4rem;
   border: 0.1rem solid ${(props) => (props.link ? "#9bf00b" : "#eaeaea")};
   font-size: 1.8rem;
+  font-weight: 600;
   font-family: "Work Sans", sans-serif;
   text-transform: uppercase;
 `;

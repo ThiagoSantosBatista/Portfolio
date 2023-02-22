@@ -37,7 +37,7 @@ const GlobalStyle = createGlobalStyle`
   }
   .textoDestaque{
     color: #EAEAEA;
-    font-weight: 700;
+    font-weight: 600;
     font-family: 'Work Sans', sans-serif;
   }
 `;

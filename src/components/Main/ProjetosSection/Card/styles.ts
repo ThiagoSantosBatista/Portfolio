@@ -20,7 +20,7 @@ export const CardContent = styled.div`
 
   h3 {
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 600;
     font-family: "Work Sans", sans-serif;
     margin-bottom: 1.6rem;
   }
@@ -31,7 +31,7 @@ export const CardContent = styled.div`
     border-radius: 0.4rem;
     border: 0.1rem solid #9bf00b;
     font-size: 1.4rem;
-    font-weight: 700;
+    font-weight: 600;
     font-family: "Work Sans", sans-serif;
     text-transform: uppercase;
     cursor: pointer;

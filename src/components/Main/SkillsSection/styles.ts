@@ -19,7 +19,7 @@ export const ListItem = styled.li`
     margin-bottom: 1.2rem;
     font-family: "Work Sans", sans-serif;
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 600;
   }
   p {
     color: rgba(234, 234, 234, 0.6);

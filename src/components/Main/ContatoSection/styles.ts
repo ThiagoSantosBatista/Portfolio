@@ -35,7 +35,7 @@ export const ListItem = styled.li`
   h3 {
     margin-bottom: 1.2rem;
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 600;
     font-family: "Work Sans", sans-serif;
   }
   p {
