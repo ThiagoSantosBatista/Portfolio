@@ -6,9 +6,7 @@ const Footer = () => {
   return (
     <S.Footer>
       <Copyright />
-      <p>
-        2023 | <span className="nome">Thiago Batista</span>
-      </p>
+      <p>2023 | Thiago Batista</p>
     </S.Footer>
   );
 };

@@ -15,19 +15,20 @@ export const ModalDiv = styled.div`
   position: relative;
   max-width: 44rem;
   padding: 2rem;
+  margin: 0 5%;
   border-radius: 0.4rem;
   border: 0.1rem solid #212121;
   background: #111111;
 
   h2 {
     margin: 0 5rem 1.6rem 0;
-    font-size: 2.4rem;
+    font-size: clamp(2rem, 1.733rem + 0.667vw, 2.4rem);
     font-weight: 600;
     font-family: "Work Sans", sans-serif;
   }
   p {
     color: rgba(255, 255, 255, 0.7);
-    font-size: 1.8rem;
+    font-size: clamp(1.4rem, 1.133rem + 0.667vw, 1.8rem);
     font-weight: 300;
     line-height: 1.5;
     margin: 0 0 3.2rem 0;
@@ -52,7 +53,7 @@ export const ModalDiv = styled.div`
     border-radius: 0.4rem;
     color: #040404;
     background: #9bf00b;
-    font-size: 1.6rem;
+    font-size: clamp(1.4rem, 1.267rem + 0.333vw, 1.6rem);
     font-weight: 600;
     font-family: "Work Sans", sans-serif;
     text-transform: uppercase;

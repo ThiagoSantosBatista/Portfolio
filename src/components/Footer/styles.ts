@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Footer = styled.footer`
   display: flex;
+  align-items: center;
   gap: 0.4rem;
   max-width: 144rem;
   padding: 0 15.6rem;
@@ -12,8 +13,10 @@ export const Footer = styled.footer`
     font-weight: 500;
   }
 
-  .nome {
-    color: #9bf00b;
-    font-weight: 500;
+  @media screen and (max-width: 1440px){
+    padding: 0 8.8%;
+  }
+  @media screen and (max-width: 1100px){
+    padding: 0 5%;
   }
 `;

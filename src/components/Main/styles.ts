@@ -4,11 +4,11 @@ export const Main = styled.main`
   max-width: 144rem;
   padding: 0 15.6rem;
   margin: 7rem auto 2.1rem;
-`;
 
-export const Linha = styled.div`
-  width: 100%;
-  height: 0.2rem;
-  border-radius: 0.4rem;
-  background: #111111;
+  @media screen and (max-width: 1440px){
+    padding: 0 8.8%;
+  }
+  @media screen and (max-width: 1100px){
+    padding: 0 5%;
+  }
 `;

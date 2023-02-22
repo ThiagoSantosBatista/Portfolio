@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <S.Section id="home">
       <h1>
-        Meu nome é <span className="textoDestaque">Thiago</span> e eu <br /> sou
+        Meu nome é <span className="textoDestaque">Thiago</span> e eu sou
         <span className="textoDestaque"> desenvolvedor Front-End</span>
       </h1>
       <ArrowDown />

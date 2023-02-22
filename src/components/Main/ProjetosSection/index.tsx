@@ -14,7 +14,7 @@ const setting: SwiperProps = {
       slidesPerView: 1,
       slidesPerGroup: 1,
     },
-    1200: {
+    1000: {
       slidesPerView: 2,
     },
   },

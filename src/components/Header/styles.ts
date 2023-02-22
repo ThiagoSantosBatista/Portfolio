@@ -19,6 +19,38 @@ export const Box = styled.div`
   height: 100%;
   max-width: 144rem;
   padding: 0 15.6rem;
+
+  .bgMobile {
+    display: none;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9;
+  }
+  .btnHeader {
+    cursor: pointer;
+    display: none;
+    border: none;
+    color: #ffffff;
+    background: none;
+  }
+
+  @media screen and (max-width: 1440px){
+    padding: 0 8.8%;
+  }
+  @media screen and (max-width: 1100px){
+    padding: 0 5%;
+  }
+  @media screen and (max-width: 768px) {
+    .menuAbrir {
+      display: block;
+    }
+    nav {
+      display: none;
+    }
+  }
 `;
 
 export const List = styled.ul`

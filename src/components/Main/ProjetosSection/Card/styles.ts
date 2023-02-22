@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Card = styled.div`
   position: relative;
 
-  img{
+  img {
     cursor: grab;
   }
 `;
@@ -17,9 +17,8 @@ export const CardContent = styled.div`
   background-color: rgba(4, 4, 4, 0.9);
   cursor: grab;
 
-
   h3 {
-    font-size: 2rem;
+    font-size: clamp(1.8rem, 1.667rem + 0.333vw, 2rem);
     font-weight: 600;
     font-family: "Work Sans", sans-serif;
     margin-bottom: 1.6rem;
@@ -35,7 +34,6 @@ export const CardContent = styled.div`
     font-family: "Work Sans", sans-serif;
     text-transform: uppercase;
     cursor: pointer;
-
   }
   .demoBtn {
     margin-right: 1.2rem;
@@ -45,5 +43,12 @@ export const CardContent = styled.div`
   .sobreBtn {
     color: #9bf00b;
     background: #111111;
+  }
+
+  @media screen and (max-width: 350px) {
+    .demoBtn,
+    .sobreBtn {
+      width: 11rem;
+    }
   }
 `;

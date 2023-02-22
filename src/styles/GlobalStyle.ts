@@ -1,6 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-//font-family: 'Roboto', sans-serif;
-//font-family: 'Work Sans', sans-serif;
 
 const GlobalStyle = createGlobalStyle`
   *, *::after, *::before{
@@ -20,6 +18,21 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.6rem;
     color: #eaeaea;
     background: #040404;
+    
+  }
+  ::-webkit-scrollbar{
+    width: .8rem;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+    }
+  ::-webkit-scrollbar-thumb {
+    background-color: #9BF00B;     
+    border-radius: 1rem;
+
+    &:hover{
+     background-color: #7DC700;      
+    }
   }
   img{
     display: block;

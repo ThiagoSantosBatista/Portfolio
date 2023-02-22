@@ -26,15 +26,10 @@ const Main = () => {
       <S.Main>
         <HeroSection />
         <SobreSection />
-        <S.Linha></S.Linha>
         <SkillsSection />
-        <S.Linha></S.Linha>
         <TecnologiasSection />
-        <S.Linha></S.Linha>
         <ProjetosSection modal={changeModal} />
-        <S.Linha></S.Linha>
         <ContatoSection />
-        <S.Linha></S.Linha>
       </S.Main>
       {modal && <Modal modal={changeModal} {...modal} />}
     </>

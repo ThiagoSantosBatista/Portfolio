@@ -23,10 +23,10 @@ const Card = ({ modal, name, img, link, desc, repo, techs }: CardProps) => {
 
   return (
     <S.Card>
-      <img src={img} alt="" />
+      <img src={img} alt="imagem do projeto" />
       <S.CardContent>
         <h3>{name}</h3>
-        <a href={link} target="_blank" className="demoBtn">
+        <a href={link} target="_blank" className="demoBtn" aria-label="Link para visualizar o projeto">
           Visualizar
         </a>
         <button className="sobreBtn" onClick={() => modal(ModalData)}>
