@@ -1,5 +1,7 @@
 import { useRef } from "react";
 import { ReactComponent as Logo } from "../../assets/svgs/logo.svg";
+import { ReactComponent as MenuAbrir } from "../../assets/svgs/menuAbrir.svg";
+import { ReactComponent as MenuFechar } from "../../assets/svgs/menuFechar.svg";
 import * as S from "./styles";
 
 const Header = () => {
@@ -27,25 +29,25 @@ const Header = () => {
             aria-expanded="true"
             onClick={fecharMenu}
           >
-            fechar
+            <MenuFechar />
           </button>
           <S.List>
-            <S.ListItem>
+            <S.ListItem onClick={fecharMenu}>
               <a href="#home" aria-label="Atalho para a seção Home">
                 Home
               </a>
             </S.ListItem>
-            <S.ListItem>
+            <S.ListItem onClick={fecharMenu}>
               <a href="#sobre" aria-label="Atalho para a seção Home">
                 Sobre
               </a>
             </S.ListItem>
-            <S.ListItem>
+            <S.ListItem onClick={fecharMenu}>
               <a href="#projetos" aria-label="Atalho para a seção Home">
                 Projetos
               </a>
             </S.ListItem>
-            <S.ListItem>
+            <S.ListItem onClick={fecharMenu}>
               <a href="#contato" aria-label="Atalho para a seção Home">
                 Contato
               </a>
@@ -58,7 +60,7 @@ const Header = () => {
           aria-expanded="false"
           onClick={abrirMenu}
         >
-          abrir
+          <MenuAbrir />
         </button>
       </S.Box>
     </S.Header>

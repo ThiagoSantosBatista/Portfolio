@@ -26,7 +26,6 @@ export const Section = styled.section`
 
 
   @media screen and (max-width: 768px) {
-    height: 53rem;
     h1 {
     max-width: 100%;
     }

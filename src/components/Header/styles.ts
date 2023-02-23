@@ -49,6 +49,29 @@ export const Box = styled.div`
     }
     nav {
       display: none;
+      position: fixed;
+      top: 0;
+      left: 20%;
+      width: 80%;
+      height: 100vh;
+      background-color: #040404;
+      border-left: 0.1rem solid #4a4a4a;
+      z-index: 10;
+      overflow-y: auto;
+    }
+    &.ativo {
+      .menuFechar,
+      .bgMobile {
+        display: block;
+      }
+      nav {
+        display: block;
+        .menuFechar {
+          position: absolute;
+          top: 1.9rem;
+          right: 5%;
+        }
+      }
     }
   }
 `;
@@ -56,6 +79,13 @@ export const Box = styled.div`
 export const List = styled.ul`
   display: flex;
   gap: 3.2rem;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+    gap: 4rem;
+  }
 `;
 
 export const ListItem = styled.li`

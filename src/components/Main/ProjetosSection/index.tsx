@@ -9,6 +9,10 @@ import * as S from "./styles";
 const setting: SwiperProps = {
   spaceBetween: 24,
   navigation: true,
+  pagination: {
+    clickable: true,
+    dynamicBullets: true,
+  },
   breakpoints: {
     300: {
       slidesPerView: 1,

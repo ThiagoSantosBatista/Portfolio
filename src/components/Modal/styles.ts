@@ -28,7 +28,7 @@ export const ModalDiv = styled.div`
   }
   p {
     color: rgba(255, 255, 255, 0.7);
-    font-size: clamp(1.4rem, 1.133rem + 0.667vw, 1.8rem);
+    font-size: clamp(1.6rem, 1.467rem + 0.333vw, 1.8rem);
     font-weight: 300;
     line-height: 1.5;
     margin: 0 0 3.2rem 0;
