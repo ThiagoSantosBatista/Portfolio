@@ -17,7 +17,9 @@ const Modal = ({ modal, name, desc, repo, techs }: ModalFunProps) => {
         <a href={repo} target="_blank">
           Repositório
         </a>
-        <button onClick={() => modal(null)}>
+        <button
+          onClick={() => modal(null)}
+        >
           <CloseModal />
         </button>
       </S.ModalDiv>

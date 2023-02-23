@@ -5,10 +5,6 @@ export const Card = styled.div`
   max-width: 49.2rem;
   width: 100%;
 
-  img {
-    cursor: grab;
-  }
-
   @media screen and (max-width: 550px) {
     img {
       min-height: 30rem;

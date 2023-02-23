@@ -13,12 +13,9 @@ interface SliderProps {
 
 const Slider = ({ settings, children }: SliderProps) => {
   return (
-      <Swiper
-        modules={[Navigation, Pagination, A11y]}
-        {...settings}
-      >
-        {children}
-      </Swiper>
+    <Swiper modules={[Navigation, Pagination]} {...settings}>
+      {children}
+    </Swiper>
   );
 };
 

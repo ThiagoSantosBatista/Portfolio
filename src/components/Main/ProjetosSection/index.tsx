@@ -9,6 +9,7 @@ import * as S from "./styles";
 const setting: SwiperProps = {
   spaceBetween: 24,
   navigation: true,
+  allowTouchMove: false,
   pagination: {
     clickable: true,
     dynamicBullets: true,
@@ -28,7 +29,7 @@ interface ProjetosSectionProps {
   modal: (modalData: ModalProps) => void;
 }
 
-const ProjetosSection = ({modal}: ProjetosSectionProps) => {
+const ProjetosSection = ({ modal }: ProjetosSectionProps) => {
   return (
     <S.Section id="projetos">
       <header>
@@ -41,8 +42,17 @@ const ProjetosSection = ({modal}: ProjetosSectionProps) => {
       </header>
       <Slider settings={setting}>
         {projects.map(({ key, name, img, webp, link, desc, repo, techs }) => (
-          <SwiperSlide key={key}>
-            <Card modal={modal} name={name} img={img} webp={webp} link={link} desc={desc} repo={repo} techs={techs}/>
+          <SwiperSlide key={key} >
+            <Card
+              modal={modal}
+              name={name}
+              img={img}
+              webp={webp}
+              link={link}
+              desc={desc}
+              repo={repo}
+              techs={techs}
+            />
           </SwiperSlide>
         ))}
       </Slider>

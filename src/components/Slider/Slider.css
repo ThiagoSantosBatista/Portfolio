@@ -1,6 +1,6 @@
 .swiper {
   width: 100%;
-  padding: 0 6rem;
+  padding: 0 6rem 6rem;
   max-width: 112.8rem;
 }
 
@@ -53,10 +53,6 @@
   background-color: #9bf00b;
 }
 
-.swiper-pagination {
-  display: none;
-}
-
 @media screen and (max-width: 1000px) {
   .swiper-slide-active {
     margin-right: 104.5rem !important;
@@ -69,15 +65,16 @@
 }
 
 @media screen and (max-width: 550px) {
-  .swiper-button-prev,
-  .swiper-button-next {
-    display: none;
-  }
   .swiper {
     width: 100%;
-    padding: 0 0 6rem;
+    padding: 0 0 8rem;
   }
   .swiper-pagination {
-    display: block;
+    bottom: 1.8rem !important;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: initial !important;
+    bottom: 0 !important;
   }
 }
