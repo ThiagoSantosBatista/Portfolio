@@ -2,9 +2,22 @@ import styled from "styled-components";
 
 export const Card = styled.div`
   position: relative;
+  max-width: 49.2rem;
+  width: 100%;
 
   img {
     cursor: grab;
+  }
+
+  @media screen and (max-width: 550px) {
+    img {
+      min-height: 30rem;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    img {
+      min-height: 25rem;
+    }
   }
 `;
 
@@ -49,14 +62,14 @@ export const CardContent = styled.div`
 
   @media (hover: hover) {
     .demoBtn:hover {
-      background: #649E00;
+      background: #649e00;
     }
     .sobreBtn:hover {
       color: #040404;
       background: #9bf00b;
     }
   }
-  
+
   @media screen and (max-width: 350px) {
     .demoBtn,
     .sobreBtn {

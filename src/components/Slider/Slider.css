@@ -9,10 +9,6 @@
   justify-content: center;
 }
 
-.swiper-slide div {
-  max-width: 49.2rem;
-}
-
 .swiper-button-prev,
 .swiper-button-next {
   background-repeat: no-repeat;
@@ -80,9 +76,6 @@
   .swiper {
     width: 100%;
     padding: 0 0 6rem;
-  }
-  .swiper-slide img {
-    min-height: 30rem;
   }
   .swiper-pagination {
     display: block;

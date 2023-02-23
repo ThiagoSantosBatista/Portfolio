@@ -13,7 +13,16 @@ interface CardProps {
   techs: string[];
 }
 
-const Card = ({ modal, name, img, webp, link, desc, repo, techs }: CardProps) => {
+const Card = ({
+  modal,
+  name,
+  img,
+  webp,
+  link,
+  desc,
+  repo,
+  techs,
+}: CardProps) => {
   const ModalData = {
     name: `${name}`,
     desc: `${desc}`,
@@ -25,7 +34,7 @@ const Card = ({ modal, name, img, webp, link, desc, repo, techs }: CardProps) =>
     <S.Card>
       <picture>
         <source srcSet={webp} type="image/webp" />
-        <img src={img} alt="imagem do projeto" loading="lazy"/>
+        <img src={img} alt="imagem do projeto" />
       </picture>
       <S.CardContent>
         <h3>{name}</h3>

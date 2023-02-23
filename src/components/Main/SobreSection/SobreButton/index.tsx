@@ -1,15 +1,16 @@
 import React from "react";
 import * as S from "./styles";
+import Curriculo from '../../../../assets/pdf/curriculo.pdf'
 
 interface ButtonProps {
-  link?: boolean;
+  cv?: boolean;
   text: string;
 }
 
-const SobreButton = ({ link, text }: ButtonProps) => {
+const SobreButton = ({ cv, text }: ButtonProps) => {
   {
-    if (link) {
-      return <S.Button as="a" href='#projetos' link={link}>{text}</S.Button>;
+    if (cv) {
+      return <S.Button as="a" href={Curriculo} cv={cv} download>{text}</S.Button>;
     }
   }
   return <S.Button as='a' href='#projetos'>{text}</S.Button>;

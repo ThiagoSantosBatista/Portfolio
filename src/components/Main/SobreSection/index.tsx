@@ -10,7 +10,7 @@ const SobreSection = () => {
       <S.Picture>
         <div className="decoracao"></div>
         <source srcSet={Fotowebp} type="image/webp" />
-        <img src={Foto} alt="Minha Foto" loading="lazy"/>
+        <img src={Foto} alt="Minha Foto" />
       </S.Picture>
       <S.ContentDiv>
         <h2>
@@ -28,7 +28,7 @@ const SobreSection = () => {
           da empresa.
         </p>
         <S.ButtonBox>
-          <SobreButton link={true} text="Download CV" />
+          <SobreButton cv={true} text="Download CV" />
           <SobreButton text="Ver Projetos" />
         </S.ButtonBox>
       </S.ContentDiv>
