@@ -4,7 +4,9 @@ export const Section = styled.section`
   position: relative;
   display: grid;
   place-items: center;
-  height: 63rem;
+  height: calc(100vh - 7rem);
+  min-height: 40rem;
+  max-height: 63rem;
 
   h1 {
     max-width: 85%;
@@ -19,15 +21,28 @@ export const Section = styled.section`
 
   svg {
     position: absolute;
-    bottom: 4rem;
     left: 50%;
     transform: translateX(-50%);
-  }
+    animation: moveSvg 1.5s infinite;
 
+    
+  }
 
   @media screen and (max-width: 768px) {
     h1 {
-    max-width: 100%;
+      max-width: 100%;
     }
   }
+
+  @keyframes moveSvg {
+      0% {
+        bottom: 6rem;
+      }
+      50% {
+        bottom: 4rem;
+      }
+      100% {
+        bottom: 6rem;
+      }
+    }
 `;

@@ -35,7 +35,7 @@ export const Picture = styled.picture`
   max-width: 32rem;
   margin: 0 0 2.8rem 2.8rem;
 
-  div {
+  .decoracao {
     position: absolute;
     inset: 0;
     border-radius: 0.4rem;
@@ -89,10 +89,18 @@ export const ContentDiv = styled.div`
     max-width: 72rem;
     justify-self: center;
     text-align: center;
+
+    &::before {
+      display: none;
+    }
   }
   @media screen and (max-width: 600px) {
     justify-self: start;
     text-align: left;
+
+    p:nth-child(3) {
+      margin-bottom: 4.2rem;
+    }
   }
 `;
 
@@ -108,5 +116,4 @@ export const ButtonBox = styled.div`
   @media screen and (max-width: 600px) {
     justify-content: start;
   }
-  
 `;

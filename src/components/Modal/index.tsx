@@ -10,7 +10,7 @@ const Modal = ({ modal, name, desc, repo, techs }: ModalFunProps) => {
         <h2>{name}</h2>
         <ul>
           {techs.map((tech) => (
-            <li>{tech}</li>
+            <li key={tech}>{tech}</li>
           ))}
         </ul>
         <p>{desc}</p>

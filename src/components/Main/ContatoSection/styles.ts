@@ -43,7 +43,9 @@ export const ListItem = styled.li`
   justify-content: center;
   height: 20rem;
   border-radius: 0.4rem;
+  outline: 0.1rem solid transparent;
   background: #111111;
+  transition: outline 0.3s cubic-bezier(1,.56,1,1.01);
 
   svg {
     margin-bottom: 2rem;
@@ -59,5 +61,16 @@ export const ListItem = styled.li`
   }
   a {
     color: #9bf00b;
+    transition: color 0.3s;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      outline: 0.1rem solid #9bf00b;
+    }
+
+    a:hover{
+      color: #649E00;
+    }
   }
 `;

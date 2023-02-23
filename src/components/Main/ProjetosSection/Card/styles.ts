@@ -39,12 +39,24 @@ export const CardContent = styled.div`
     margin-right: 1.2rem;
     color: #040404;
     background: #9bf00b;
+    transition: all 0.3s;
   }
   .sobreBtn {
     color: #9bf00b;
     background: #111111;
+    transition: all 0.3s;
   }
 
+  @media (hover: hover) {
+    .demoBtn:hover {
+      background: #649E00;
+    }
+    .sobreBtn:hover {
+      color: #040404;
+      background: #9bf00b;
+    }
+  }
+  
   @media screen and (max-width: 350px) {
     .demoBtn,
     .sobreBtn {

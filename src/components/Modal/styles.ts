@@ -9,16 +9,19 @@ export const Background = styled.div`
   height: 100vh;
   background: rgba(4, 4, 4, 0.8);
   z-index: 100;
+  animation: modal 0.4s;
 `;
 
 export const ModalDiv = styled.div`
   position: relative;
   max-width: 44rem;
+  max-height: 95vh;
   padding: 2rem;
-  margin: 0 5%;
+  margin: 1rem 5%;
   border-radius: 0.4rem;
   border: 0.1rem solid #212121;
   background: #111111;
+  overflow-y: auto;
 
   h2 {
     margin: 0 5rem 1.6rem 0;
@@ -43,6 +46,7 @@ export const ModalDiv = styled.div`
     border-radius: 50%;
     background: #212121;
     cursor: pointer;
+    transition: background 0.3s;
   }
 
   a {
@@ -57,6 +61,7 @@ export const ModalDiv = styled.div`
     font-weight: 600;
     font-family: "Work Sans", sans-serif;
     text-transform: uppercase;
+    transition: background 0.3s;
   }
 
   ul {
@@ -64,7 +69,7 @@ export const ModalDiv = styled.div`
     flex-wrap: wrap;
     align-items: center;
     gap: 0.6rem;
-    margin: 0 5rem 2.4rem 0;
+    margin-bottom: 2.4rem;
   }
 
   li {
@@ -73,5 +78,25 @@ export const ModalDiv = styled.div`
     border-radius: 0.4rem;
     background: #212121;
     color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media (hover: hover) {
+    a:hover {
+      background: #649e00;
+    }
+    button:hover {
+      background: #444444;
+    }
+  }
+
+  @keyframes modal {
+    from {
+      opacity: 0;
+      transform: translateY(-6rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 `;

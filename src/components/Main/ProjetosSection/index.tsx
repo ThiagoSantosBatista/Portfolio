@@ -40,9 +40,9 @@ const ProjetosSection = ({modal}: ProjetosSectionProps) => {
         </p>
       </header>
       <Slider settings={setting}>
-        {projects.map(({ key, name, img, link, desc, repo, techs }) => (
+        {projects.map(({ key, name, img, webp, link, desc, repo, techs }) => (
           <SwiperSlide key={key}>
-            <Card modal={modal} name={name} img={img} link={link} desc={desc} repo={repo} techs={techs}/>
+            <Card modal={modal} name={name} img={img} webp={webp} link={link} desc={desc} repo={repo} techs={techs}/>
           </SwiperSlide>
         ))}
       </Slider>

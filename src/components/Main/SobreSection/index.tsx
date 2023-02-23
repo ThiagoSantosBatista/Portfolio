@@ -1,5 +1,6 @@
 import React from "react";
 import Foto from "../../../assets/imgs/foto.png";
+import Fotowebp from "../../../assets/imgs/foto.webp";
 import SobreButton from "./SobreButton";
 import * as S from "./styles";
 
@@ -7,8 +8,9 @@ const SobreSection = () => {
   return (
     <S.Section id="sobre">
       <S.Picture>
-        <div></div>
-        <img src={Foto} alt="Minha Foto" />
+        <div className="decoracao"></div>
+        <source srcSet={Fotowebp} type="image/webp" />
+        <img src={Foto} alt="Minha Foto" loading="lazy"/>
       </S.Picture>
       <S.ContentDiv>
         <h2>

@@ -49,7 +49,9 @@ export const ListItem = styled.li`
   gap: 3.2rem;
   height: 20rem;
   border-radius: 0.4rem;
+  outline: 0.1rem solid transparent;
   background: #111111;
+  transition: outline 0.3s cubic-bezier(1,.56,1,1.01);
 
   h3 {
     font-size: clamp(1.8rem, 1.667rem + 0.333vw, 2rem);
@@ -66,6 +68,12 @@ export const ListItem = styled.li`
     height: 4.2rem;
     border-radius: 0.2rem 0 0 0.2rem;
     background: #9bf00b;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      outline: .1rem solid #9bf00b;
+    }
   }
 
   @media screen and (max-width: 768px) {

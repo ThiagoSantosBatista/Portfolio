@@ -14,4 +14,12 @@ export const Button = styled.button<ButtonProps>`
   font-weight: 600;
   font-family: "Work Sans", sans-serif;
   text-transform: uppercase;
+  transition: all .3s;
+
+  @media (hover: hover) {
+    &:hover {
+      color: ${(props) => (props.link ? "#040404" : "#040404")};
+      background: ${(props) => (props.link ? "#9bf00b" : "#eaeaea")};
+    }
+  }
 `;

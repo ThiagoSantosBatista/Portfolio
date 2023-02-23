@@ -15,11 +15,19 @@
 
 .swiper-button-prev,
 .swiper-button-next {
-  transform: translateY(-3rem);
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
+  transition: transform 0.3s;
 }
+
+@media (hover: hover) {
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    transform: scale(1.15);
+  }
+}
+
 .swiper-button-prev {
   background-image: url(../../assets/svgs/arrowLeft.svg);
 }
@@ -36,17 +44,20 @@
 .swiper-slide-next {
   margin-right: 6.1rem !important;
 }
+
 .swiper-slide-prev {
   transform: translateX(-6rem);
 }
+
 .swiper-pagination-bullet {
   background-color: #eaeaea;
 }
+
 .swiper-pagination-bullet-active {
   background-color: #9bf00b;
 }
 
-.swiper-pagination{
+.swiper-pagination {
   display: none;
 }
 
@@ -73,7 +84,7 @@
   .swiper-slide img {
     min-height: 30rem;
   }
-  .swiper-pagination{
+  .swiper-pagination {
     display: block;
   }
 }

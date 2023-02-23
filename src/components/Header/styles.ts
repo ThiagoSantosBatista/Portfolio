@@ -37,10 +37,10 @@ export const Box = styled.div`
     background: none;
   }
 
-  @media screen and (max-width: 1440px){
+  @media screen and (max-width: 1440px) {
     padding: 0 8.8%;
   }
-  @media screen and (max-width: 1100px){
+  @media screen and (max-width: 1100px) {
     padding: 0 5%;
   }
   @media screen and (max-width: 768px) {
@@ -55,8 +55,8 @@ export const Box = styled.div`
       width: 80%;
       height: 100vh;
       background-color: #040404;
-      border-left: 0.1rem solid #4a4a4a;
-      z-index: 10;
+      border-left: 0.1rem solid #212121;
+      z-index: 100;
       overflow-y: auto;
     }
     &.ativo {
@@ -83,16 +83,42 @@ export const List = styled.ul`
   @media screen and (max-width: 768px) {
     flex-direction: column;
     align-items: center;
-    margin-top: 10rem;
+    margin: 10rem 0 3rem;
     gap: 4rem;
   }
 `;
 
 export const ListItem = styled.li`
   a {
-    color: #EAEAEA;
+    position: relative;
+    color: #eaeaea;
     text-transform: uppercase;
     font-family: "Work Sans", sans-serif;
     transition: all 0.3s;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -0.5rem;
+      width: 100%;
+      height: 0.1rem;
+      border-radius: 0.4rem;
+      background-color: #9bf00b;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        color: #9bf00b;
+      }
+
+      &:hover::before {
+        transform-origin: left;
+        transform: scaleX(1);
+      }
+    }
   }
 `;
