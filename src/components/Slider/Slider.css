@@ -2,6 +2,7 @@
   width: 100%;
   padding: 0 6rem 6rem;
   max-width: 112.8rem;
+  pointer-events: none;
 }
 
 .swiper-slide {
@@ -15,6 +16,7 @@
   background-size: 100% auto;
   background-position: center;
   transition: transform 0.3s;
+  pointer-events: all;
 }
 
 @media (hover: hover) {
@@ -43,6 +45,10 @@
 
 .swiper-slide-prev {
   transform: translateX(-6rem);
+}
+
+.swiper-pagination {
+  pointer-events: all;
 }
 
 .swiper-pagination-bullet {

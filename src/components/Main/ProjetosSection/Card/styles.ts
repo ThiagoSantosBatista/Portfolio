@@ -24,7 +24,6 @@ export const CardContent = styled.div`
   width: 100%;
   padding: 2rem;
   background-color: rgba(4, 4, 4, 0.9);
-  cursor: grab;
 
   h3 {
     font-size: clamp(1.8rem, 1.667rem + 0.333vw, 2rem);
@@ -43,6 +42,7 @@ export const CardContent = styled.div`
     font-family: "Work Sans", sans-serif;
     text-transform: uppercase;
     cursor: pointer;
+    pointer-events: all;
   }
   .demoBtn {
     margin-right: 1.2rem;

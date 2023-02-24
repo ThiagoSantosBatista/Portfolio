@@ -13,7 +13,7 @@ interface SliderProps {
 
 const Slider = ({ settings, children }: SliderProps) => {
   return (
-    <Swiper modules={[Navigation, Pagination]} {...settings}>
+    <Swiper modules={[Navigation, Pagination]} {...settings} onClick={(e) => console.log(e)}>
       {children}
     </Swiper>
   );

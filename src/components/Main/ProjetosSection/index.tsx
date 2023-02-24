@@ -8,8 +8,9 @@ import * as S from "./styles";
 
 const setting: SwiperProps = {
   spaceBetween: 24,
-  navigation: true,
   allowTouchMove: false,
+  navigation: true,
+  noSwipingSelector: "button, a",
   pagination: {
     clickable: true,
     dynamicBullets: true,
@@ -17,7 +18,6 @@ const setting: SwiperProps = {
   breakpoints: {
     300: {
       slidesPerView: 1,
-      slidesPerGroup: 1,
     },
     1000: {
       slidesPerView: 2,
@@ -42,7 +42,7 @@ const ProjetosSection = ({ modal }: ProjetosSectionProps) => {
       </header>
       <Slider settings={setting}>
         {projects.map(({ key, name, img, webp, link, desc, repo, techs }) => (
-          <SwiperSlide key={key} >
+          <SwiperSlide key={key}>
             <Card
               modal={modal}
               name={name}
