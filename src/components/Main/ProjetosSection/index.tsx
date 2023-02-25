@@ -12,7 +12,7 @@ const setting: SwiperProps = {
   navigation: true,
   noSwipingSelector: "button, a",
   pagination: {
-    clickable: true,
+    clickable: false,
     dynamicBullets: true,
   },
   breakpoints: {

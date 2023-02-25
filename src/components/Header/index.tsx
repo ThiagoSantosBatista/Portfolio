@@ -21,7 +21,7 @@ const Header = () => {
     <S.Header>
       <S.Box ref={menuRef}>
         <Logo />
-        <span className="bgMobile"></span>
+        <div className="bgMobile"></div>
         <nav>
           <button
             className="btnHeader menuFechar"
