@@ -1,5 +1,5 @@
 import React from "react";
-import {ReactComponent as ArrowDown }from '../../../assets/svgs/arrowDown.svg'
+import { ReactComponent as ArrowDown } from "../../../assets/svgs/arrowDown.svg";
 import * as S from "./styles";
 
 const HeroSection = () => {

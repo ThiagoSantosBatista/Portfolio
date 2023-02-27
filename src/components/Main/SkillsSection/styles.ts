@@ -42,10 +42,10 @@ export const ListItem = styled.li`
     font-weight: 300;
     line-height: 1.5;
   }
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     max-width: 90%;
   }
-  @media screen and (max-width: 600px){
+  @media screen and (max-width: 600px) {
     max-width: 100%;
   }
 `;

@@ -24,8 +24,6 @@ export const Section = styled.section`
     left: 50%;
     transform: translateX(-50%);
     animation: moveSvg 1.5s infinite;
-
-    
   }
 
   @media screen and (max-width: 768px) {
@@ -35,14 +33,14 @@ export const Section = styled.section`
   }
 
   @keyframes moveSvg {
-      0% {
-        bottom: 6rem;
-      }
-      50% {
-        bottom: 4rem;
-      }
-      100% {
-        bottom: 6rem;
-      }
+    0% {
+      bottom: 6rem;
     }
+    50% {
+      bottom: 4rem;
+    }
+    100% {
+      bottom: 6rem;
+    }
+  }
 `;

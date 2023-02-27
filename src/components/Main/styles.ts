@@ -5,10 +5,10 @@ export const Main = styled.main`
   padding: 0 15.6rem;
   margin: 7rem auto 2.1rem;
 
-  @media screen and (max-width: 1440px){
+  @media screen and (max-width: 1440px) {
     padding: 0 8.8%;
   }
-  @media screen and (max-width: 1100px){
+  @media screen and (max-width: 1100px) {
     padding: 0 5%;
   }
 `;

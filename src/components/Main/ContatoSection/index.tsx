@@ -27,12 +27,24 @@ const ContatoSection = () => {
         <S.ListItem>
           <Linkedin />
           <h3>LinkedIn</h3>
-          <a href="https://www.linkedin.com/in/thiago-santos-batista/" target="_blank" aria-label="Link para o meu LinkedIn">Thiago Santos Batista</a>
+          <a
+            href="https://www.linkedin.com/in/thiago-santos-batista/"
+            target="_blank"
+            aria-label="Link para o meu LinkedIn"
+          >
+            Thiago Santos Batista
+          </a>
         </S.ListItem>
         <S.ListItem>
           <Github />
           <h3>GitHub</h3>
-          <a href="https://github.com/ThiagoSantosBatista" target="_blank" aria-label="Link para o meu GitHub">@ThiagoSantosBatista</a>
+          <a
+            href="https://github.com/ThiagoSantosBatista"
+            target="_blank"
+            aria-label="Link para o meu GitHub"
+          >
+            @ThiagoSantosBatista
+          </a>
         </S.ListItem>
       </S.List>
     </S.Section>
