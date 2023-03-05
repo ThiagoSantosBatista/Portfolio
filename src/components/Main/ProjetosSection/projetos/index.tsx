@@ -183,7 +183,7 @@ export const projects = [
     img: `${Loki}`,
     webp: `${Lokiwebp}`,
     link: "https://tsb-codelandia06.netlify.app/",
-    desc: "Esse projeto é um desafio da comunidade Codelândia, onde você deve criar a página de acordo com o layout disponibilizado no Figma. O objetivo desse desafio consiste em criar uma página de apresentação do filme “Loki”, onde o usuário consegue assistir o trailer e também ser redirecionado para assistir o filme.",
+    desc: "Esse projeto é um desafio da comunidade Codelândia, onde você deve criar a página de acordo com o layout disponibilizado no Figma. O objetivo desse desafio consiste em criar uma página de apresentação da série “Loki”, onde o usuário consegue assistir o trailer e também ser redirecionado para assistir a série.",
     repo: "https://github.com/ThiagoSantosBatista/Codelandia/tree/main/desafio-06",
     techs: ["ReactJS", "Styled Components"],
   },
