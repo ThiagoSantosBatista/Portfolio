@@ -17,7 +17,7 @@ const SobreSection = () => {
           Um pouco <span className="textoDestaque">sobre mim</span>
         </h2>
         <p>
-          Meu nome é Thiago, tenho 18 anos, sou Desenvolvedor Front-End Júnior e
+          Meu nome é Thiago, tenho 19 anos, sou Desenvolvedor Front-End Júnior e
           estou cursando ensino superior em Análise e Desenvolvimento de
           Sistemas. Iniciei meus estudos em desenvolvimento web no início de
           2022 e desde então venho em aprendizado constante.
